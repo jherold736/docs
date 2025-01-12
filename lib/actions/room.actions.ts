@@ -1,3 +1,4 @@
+
 'use server';
 
 import { nanoid } from 'nanoid'
@@ -29,7 +30,7 @@ export const createDocument = async ({ userId, email }: CreateDocumentParams) =>
 
     return parseStringify(room);
   } catch (error) {
-    console.log(`Error happened while creating a room: ${error}`);
+    console.log(Error happened while creating a room: ${error});
   }
 }
 
@@ -45,6 +46,7 @@ export const getDocument = async ({ roomId, userId }: { roomId: string; userId: 
     
       return parseStringify(room);
   } catch (error) {
-    console.log(`Error happened while getting a room: ${error}`);
+    console.log(Error happened while getting a room: ${error});
   }
 }
+  
